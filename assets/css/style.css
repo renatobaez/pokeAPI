@@ -4,6 +4,9 @@
   gap: 20px;
   margin: 20px;
 }
+.card{
+ width: 15rem;
+}
 .direction{
   display: flex;
   justify-content:center;

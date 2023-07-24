@@ -13,7 +13,7 @@ const getPokemons = async () => {
     const data = results?.map(({ url }) => getData(url))
     const pokemons = await Promise.all(data)
     const template = pokemons.map(({ name , id , sprites }) => `
-      <div class="card" style="width: 10rem;">
+      <div class="card">
         <img src="${sprites.other['official-artwork'].front_default}" class="card-img-top" alt="img Front ${name}">
         <div class="card-body">
           <span>Numero: ${id}</span>
